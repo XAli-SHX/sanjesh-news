@@ -1,4 +1,5 @@
 import {Outlet, Link} from "react-router-dom";
+import {Routes} from './Routes.tsx'
 
 export function Layout() {
     return (
@@ -6,10 +7,10 @@ export function Layout() {
             <nav>
                 <ul>
                     <li>
-                        <Link to={'/'}>Home</Link>
+                        <Link to={Routes.Home}>Home</Link>
                     </li>
                     <li>
-                        <Link to={'/about'}>About</Link>
+                        <Link to={Routes.About}>About</Link>
                     </li>
                 </ul>
             </nav>
